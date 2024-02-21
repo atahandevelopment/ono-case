@@ -1,0 +1,28 @@
+.table-container {
+    width: 1033px;
+    border-collapse: collapse;
+        thead {
+            border-bottom: 1px solid #F0F0F0;
+            height: 69px;
+            th:nth-child(1) {
+                tr {
+                    width: 118px;
+                    height: 21px;
+                    opacity: 0.5px;
+                    font-family: DM Sans;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    color: #000000;
+                }
+            }
+        }
+
+    .table-rows {
+            height: 78px;
+            width: 1029px;
+            border-bottom: 1px solid #F0F0F0;
+    }
+}

@@ -1,0 +1,70 @@
+$color-1: #EAEAEA;
+$color-primary: #00BAFF;
+
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 1;
+    top: 38px;
+    left: 17px;
+}
+.search-sidebar {
+    border-radius: 8px;
+    width: 226px;
+    height: 52px;
+    padding-left: 55px;
+    border: 1px solid $color-1;
+    &:focus {
+        outline: none;
+        border: 1px solid $color-primary;
+        &::placeholder {
+            visibility: hidden;
+        }
+    }
+    &::placeholder {
+        line-height: 20.83px;
+        size: 16px;
+        font-weight: 400;
+        color:#ADA7A7;
+        position: relative;
+        top:2px;
+    }
+}
+
+.search-audience {
+    border-radius: 8px;
+    width: 354px;
+    height: 52px;
+    padding-left: 55px;
+    border: 1px solid $color-1;
+    &:focus {
+        outline: none;
+        border: 1px solid $color-primary;
+        &::placeholder {
+            visibility: hidden;
+        }
+    }
+    &::placeholder {
+        line-height: 20.83px;
+        size: 16px;
+        font-weight: 400;
+        color:#ADA7A7;
+        position: relative;
+        top:2px;
+    }
+}
+
+.form-checkbox[type="button"] {
+    background-image: url('../../../../src//assets/minus-square.svg');
+    background-size: 20px 20px; /* İkon boyutu */
+    background-position: center; /* İkonun düğmenin ortasında olmasını sağlar */
+    background-repeat: no-repeat; /* İkonun tekrar etmemesini sağlar */
+    padding-left: 30px; /* İkonun sağında biraz boşluk bırakır */
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    cursor: pointer;
+}

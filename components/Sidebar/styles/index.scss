@@ -1,0 +1,109 @@
+
+.sidebar {
+    padding: 0;
+    margin: 0;
+    width: 291px;
+    height: 100vh;
+    border-right: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ono-logo {
+        width: 167.79px;
+        height: 49.06px;
+        margin-top: 45px;
+        margin-bottom: 21.94px;
+        display: flex;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .search-box {
+        width: 226px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .menu {
+        width: 226px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 391px;
+        
+
+        .menu-span {
+            width: 37px;
+            height: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0px;
+            text-align: left;
+            color: #000000;
+            opacity: 30%;
+        }
+
+        .menu-item {
+            color: #000000;
+            opacity: 30%;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 24px;
+            svg {
+                cursor: pointer;
+            }
+
+            &:hover {
+                color: #8241FF;
+                opacity: 100%;
+                svg {
+                    color: #8241FF;
+                    opacity: 100%;
+                }
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0px;
+                text-align: left;
+                cursor: pointer;
+            }
+        }
+
+        .highlighter {
+            color: #8241FF;
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            gap: 24px;
+            svg {
+                color: #8241FF;
+                cursor: pointer;
+            }
+
+            &:hover {
+                color: #8241FF;
+                svg {
+                    color: #8241FF;
+                }
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0px;
+                text-align: left;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
