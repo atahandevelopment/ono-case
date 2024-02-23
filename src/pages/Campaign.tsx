@@ -1,15 +1,14 @@
-import PanelLayout from '../../components/Layout'
+import { useEffect } from "react";
+import PanelLayout from "../../components/Layout";
 
 // type Props = {}
 
 const Campaign = () => {
+  useEffect(() => {
+    document.title = "Campaign";
+  }, []);
 
-  return (
-    <PanelLayout>
-      
-        Campaign Page
-    </PanelLayout>
-  )
-}
+  return <PanelLayout>Campaign Page</PanelLayout>;
+};
 
-export default Campaign
+export default Campaign;

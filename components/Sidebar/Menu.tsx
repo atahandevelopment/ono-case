@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { MenuList } from "./jsonData";
 import "./styles/index.scss";
 import { useNavigate } from "react-router-dom";
-type MenuType = {
+export type MenuType = {
   name: string;
   route: string;
   icon: JSX.Element;

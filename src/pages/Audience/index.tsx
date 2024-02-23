@@ -19,7 +19,11 @@ const Audience = () => {
   });
 
   useEffect(() => {
-   GetAudiences()
+    document.title = "Audience";
+  }, []);
+
+  useEffect(() => {
+    GetAudiences()
       .then((response) => {
         setInitialAudienceList(response?.data);
       })
@@ -28,16 +32,15 @@ const Audience = () => {
       });
   }, []);
 
-
   return (
     <PanelLayout>
       <div className="filter-layout">
-          <Filter
-            filterData={filterData}
-            setFilterData={setFilterData}
-            initialAudienceList={initialAudienceList}
-            setFilteredList={setFilteredList}
-          />
+        <Filter
+          filterData={filterData}
+          setFilterData={setFilterData}
+          initialAudienceList={initialAudienceList}
+          setFilteredList={setFilteredList}
+        />
       </div>
       <div className="audience-list">
         {/* @ts-expect-error */}

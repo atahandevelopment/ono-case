@@ -1,6 +1,7 @@
 
 .header {
-    width: 1069px;
+    // width: 1069px;
+    @apply xs:w-full;
     margin-top: 32px;
     display: flex;
     justify-content: center;
@@ -8,13 +9,14 @@
 }
 
 .filter-layout {
-    width: 1069px;
-    height: 52px;
+    @apply 2xl:w-[1069px] sm:h-[52px] xs:h-[300px] xs:gap-3 xs:w-11/12 xs:flex xs:justify-between sm:flex sm:flex-row;
+    // height: 52px;
     display: flex;
     margin-top: 32px;
     justify-content: space-between;
     align-items: center;
     div:nth-child(1) {
+        @apply xs:flex xs:flex-col sm:flex sm:flex-row xs:gap-2 xs:items-start;
         width: 116px;
         height: 23px;
         font-size: 18px;
@@ -25,20 +27,21 @@
         color:#000000;
     }
     div:nth-child(2) {
-        width: 693px;
+        @apply 2xl:w-[693px] xs:w-11/12 xs:flex xs:flex-col sm:flex sm:flex-row xs:gap-2 xs:justify-center xs:items-start;
+        // width: 693px;
         height: 52px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         .search-box {
-            width: 354px;
+            @apply 2xl:w-[354px] xs:w-full;
             height: 52px;
             position: relative;
             margin-right: 15px;
             top:-23px;
         }
         .selectbox-1 {
-            width: 162px;
+            @apply xs:w-full 2xl:w-[162px];
             height: 51px;
             margin-right:14px;
             border-radius: 8px;
@@ -54,14 +57,14 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-image: url('../../../assets/arrow-down.svg');
+            background-image: url('../../../assets/DotsThree.svg');
             background-repeat: no-repeat;
             background-position: right 24px center;
             cursor: pointer;
         }
 
         .selectbox-2 {
-            width: 148px;
+            @apply xs:w-full 2xl:w-[148px];
             height:51px;
             border-radius: 8px;
             padding: 15px 24px 15px 24px;
@@ -83,13 +86,13 @@
         }
     }
 
-  
+
 }
 
 .audience-list {
-    width: 1069px;
+    @apply 2xl:w-[1069px] xs:w-11/12 overflow-hidden xs:px-2;
+    // width: 1069px;
     height: 776px;
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
     border-radius: 8px;
@@ -113,7 +116,7 @@
         line-height: 21px;
         letter-spacing: 0px;
         text-align: left;
-        color: #000000;        
+        color: #000000;
     }
 
     .audience-name-container {
@@ -162,3 +165,4 @@
         }
     }
 }
+

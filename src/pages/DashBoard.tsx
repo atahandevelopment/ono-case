@@ -1,13 +1,13 @@
-import PanelLayout from '../../components/Layout'
+import { useEffect } from "react";
+import PanelLayout from "../../components/Layout";
 
 // type Props = {}
 
 const DashBoard = () => {
-  return (
-    <PanelLayout>
-        Dashboard
-    </PanelLayout>
-  )
-}
+  useEffect(() => {
+    document.title = "Dashboard";
+  }, []);
+  return <PanelLayout>Dashboard</PanelLayout>;
+};
 
-export default DashBoard
+export default DashBoard;

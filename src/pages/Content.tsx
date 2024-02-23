@@ -1,13 +1,13 @@
-import PanelLayout from '../../components/Layout'
+import { useEffect } from "react";
+import PanelLayout from "../../components/Layout";
 
 // type Props = {}
 
 const Content = () => {
-  return (
-    <PanelLayout>
-        Content Page
-    </PanelLayout>
-  )
-}
+  useEffect(() => {
+    document.title = "Content";
+  }, []);
+  return <PanelLayout>Content Page</PanelLayout>;
+};
 
-export default Content
+export default Content;

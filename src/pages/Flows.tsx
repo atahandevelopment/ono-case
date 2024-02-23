@@ -1,15 +1,13 @@
+import { useEffect } from "react";
 import PanelLayout from "../../components/Layout";
 
 // type Props = {}
 
 const Flows = () => {
-
-  return (
-    <PanelLayout>
-
-      Flows Page
-    </PanelLayout>
-  );
+  useEffect(() => {
+    document.title = "Flows";
+  }, []);
+  return <PanelLayout>Flows Page</PanelLayout>;
 };
 
 export default Flows;

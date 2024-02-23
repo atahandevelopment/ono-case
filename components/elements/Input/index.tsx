@@ -23,7 +23,7 @@ const Input = (props: Props) => {
   return (
     <>
       {type === "text" && (
-        <div className="search-icon">
+        <div className="search-icon" style={{ width: "24px", height: "24px"}}>
           <SearchNormal size="24" color="#ADA7A7" variant="Linear" />
         </div>
       )}
