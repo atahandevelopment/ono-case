@@ -90,7 +90,7 @@
 }
 
 .audience-list {
-    @apply 2xl:w-[1069px] xs:w-11/12 overflow-hidden xs:px-2;
+    @apply 2xl:w-[1069px] xs:w-11/12 overflow-x-hidden xs:px-2;
     // width: 1069px;
     height: 776px;
     display: flex;
